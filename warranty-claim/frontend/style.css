@@ -1,0 +1,96 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+#form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0; /* Reduced top margin for the h2 element */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px; /* Reduced space between fields */
+    margin-bottom: 5px; /* Reduced space between fields */
+}
+
+input[type="file"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Space above the button */
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+#result {
+    margin-top: 10px; /* Reduced space above the result */
+    text-align: center;
+    padding: 10px;
+    background-color: #dff0d8;
+    border: 1px solid #d6e9c6;
+    color: #3c763d;
+    display: none; /* Hidden by default */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    #form-container {
+        margin: 20px;
+        padding: 10px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+}
+#predictionValue {
+    background-color: #f2f2f2; /* Light grey background for visibility */
+    color: #333;              /* Dark grey text color for contrast */
+    border: 1px solid #ccc;   /* A subtle border */
+    border-radius: 4px;       /* Rounded corners */
+    padding: 10px;            /* Some padding inside the div */
+    margin-top: 10px;         /* Space above the div */
+    font-size: 1.1em;         /* Slightly larger font size */
+    font-weight: bold;        /* Make the text bold */
+    width: fit-content;       /* Only take up as much width as needed */
+    margin-left: auto;        /* Centering the div */
+    margin-right: auto;
+    display: block;           /* Treat the div as a block element */
+    text-align: center;       /* Center the text inside the div */
+}

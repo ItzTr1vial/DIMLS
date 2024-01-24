@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Warranty Claim Submission</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form-container">
+        <h2>Warranty Claim Form</h2>
+        <form id="warrantyForm">
+            <select id="area" required>
+                <option value=""disabled selected>Select Area</option>
+                <option value="Rural">Rural</option>
+                <option value="Urban">Urban</option>
+            </select><br>
+
+            <select id="consumerProfile" required>
+                <option value=""disabled selected>Select Consumer Profile</option>
+                <option value="Personal">Personal</option>
+                <option value="Business">Business</option>
+            </select><br>
+
+            <select id="productCategory" required>
+                <option value=""disabled selected>Select Product Category</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Appliances">Household</option>
+            </select><br>
+
+            <select id="productType" required>
+                <option value=""disabled selected>Select Product Type</option>
+                <option value="TV">TV</option>
+                <option value="AC">AC</option>
+            </select><br>
+            <input type="number" id="AC_1001_Issue" placeholder="AC 1001 Issue" min="0" step="0.1"><br>
+            <input type="number" id="AC_1002_Issue" placeholder="AC 1002 Issue" min="0" step="0.1"><br>
+            <input type="number" id="AC_1003_Issue" placeholder="AC 1003 Issue" min="0" step="0.1"><br>
+            
+            <input type="number" id="TV_2001_Issue" placeholder="TV 2001 Issue" min="0" step="0.1"><br>
+            <input type="number" id="TV_2002_Issue" placeholder="TV 2002 Issue" min="0" step="0.1"><br>
+            <input type="number" id="TV_2003_Issue" placeholder="TV 2003 Issue" min="0" step="0.1"><br>
+
+            <input type="number" id="claimValue" placeholder="Claim Value" required min="0" step="0.1"><br>
+
+            <input type="number" id="serviceCentre" placeholder="Service Centre" required min="0" step="0.1"><br>
+
+            <input type="number" id="productAge" placeholder="Product Age" required min="0" step="0.1"><br>
+
+            <select id="purchasedFrom" required>
+                <option value=""disabled selected>Purchased From</option>
+                <option value="Dealer">Dealer</option>
+                <option value="Manufacturer">Manufacturer</option>
+                <option value="Internet">Internet</option>
+            </select><br>
+
+            <input type="number" id="callDetails" placeholder="Call Details" min="0" step="0.1" required><br>
+
+            <select id="purpose" required>
+                <option value="" disabled selected>Purpose</option>
+                <option value="Claim">Claim</option>
+                <option value="Complaint">Complaint</option>
+                <option value="Other">Other</option>
+            </select><br>
+
+            <button type="submit">Submit Claim</button>
+        </form>
+        <div id="result"></div>
+        <div id="predictionValue"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
